@@ -3,20 +3,16 @@ import Logo from './assets/Logo.png'
 
 import {Image, Text, VStack, Box, FormControl, Input, Button, Link} from 'native-base';
 import { TouchableOpacity } from 'react-native';
+import { Titulo } from './components/Titulo';
 
 export default function Login() {
     return (
       <VStack flex={1} alignItems="center" p={5} justifyContent="center">
         <Image source={Logo} alt="Logo Voll" mb={16}/>
 
-        <Text fontSize="2xl"
-              fontWeight="bold"
-              color="gray.500"
-              textAlign="Center"
-              mt={5}
-              mb={8}>
-          Faça Login em sua conta
-        </Text>
+        <Titulo>
+          Faça login em sua conta
+        </Titulo>
         <Box>
           <FormControl mt={3}>
             <FormControl.Label>Email</FormControl.Label>
