@@ -1,5 +1,6 @@
 import { ITextProps, Text } from "native-base";
 import { ReactNode } from "react";
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 interface TituloProps extends ITextProps {
     children: ReactNode
