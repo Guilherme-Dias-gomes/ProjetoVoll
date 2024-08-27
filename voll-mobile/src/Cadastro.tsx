@@ -42,9 +42,9 @@ export default function Cadastro() {
           }
         </Box>
         <Box>
-          <Text color="blue.800" fontWeight='bold' fontSize='md' mt="2" mb="2">
+          { numSecao == 2 && <Text color="blue.800" fontWeight='bold' fontSize='md' mt="2" mb="2">
             Selecione o plano:
-          </Text>
+          </Text>}
           {
             secoes[numSecao].checkbox.map(checkbox => {
               return <Checkbox key={checkbox.id} 
